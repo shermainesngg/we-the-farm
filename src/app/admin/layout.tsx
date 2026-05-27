@@ -9,6 +9,7 @@ import {
   LayoutDashboard,
   CalendarDays,
   ClipboardList,
+  ShoppingBag,
   LogOut,
   ExternalLink,
 } from "lucide-react";
@@ -63,6 +64,7 @@ export default function AdminLayout({
     { href: "/admin", label: "Dashboard", icon: LayoutDashboard },
     { href: "/admin/events", label: "Events", icon: CalendarDays },
     { href: "/admin/bookings", label: "Bookings", icon: ClipboardList },
+    { href: "/admin/products", label: "Products", icon: ShoppingBag },
   ];
 
   return (

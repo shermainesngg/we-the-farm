@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 512">
+  <!--
+    We The Farm — Concept 4: Cute Chicken Mascot
+    Kawaii-inspired chicken with leaf hat, paired with wordmark.
+    Colors: Forest #3B4A2B, Terracotta #D05E3A, Amber #D4A130,
+            Honey #EBC85B, Cream #FAF3E3, Earth #2C1D10
+  -->
+
+  <!-- ═══ CHICKEN ICON ═══ -->
+  <g id="icon">
+
+    <!-- Shadow under chicken -->
+    <ellipse cx="185" cy="410" rx="110" ry="18" fill="#2C1D10" opacity="0.1"/>
+
+    <!-- Tail feathers (behind body) -->
+    <path d="M280 240c20-18 38-50 32-80-14 12-30 26-42 40" fill="#D4A130" opacity="0.6"/>
+    <path d="M290 260c24-10 46-36 44-62-14 8-34 18-48 34" fill="#D05E3A" opacity="0.5"/>
+    <path d="M275 225c16-22 28-52 20-72-12 10-24 30-30 48" fill="#EBC85B" opacity="0.5"/>
+
+    <!-- Body — big round kawaii body -->
+    <ellipse cx="185" cy="300" rx="120" ry="100" fill="#FAF3E3"/>
+    <!-- Body outline for favicon clarity -->
+    <ellipse cx="185" cy="300" rx="120" ry="100" fill="none" stroke="#2C1D10" stroke-width="6" opacity="0.15"/>
+
+    <!-- Belly highlight -->
+    <ellipse cx="175" cy="320" rx="70" ry="55" fill="#EBC85B" opacity="0.2"/>
+
+    <!-- Wing (left side of body) -->
+    <path d="M105 280c-15 10-25 35-15 55 15-8 30-20 38-35" fill="#EBC85B" opacity="0.5"/>
+    <path d="M98 295c-20 8-30 30-22 48 12-6 28-18 34-32" fill="#D4A130" opacity="0.35"/>
+
+    <!-- Right wing tucked -->
+    <ellipse cx="230" cy="290" rx="40" ry="50" fill="#EBC85B" opacity="0.25"/>
+
+    <!-- Legs -->
+    <g stroke="#D4A130" stroke-width="8" stroke-linecap="round" fill="none">
+      <path d="M155 390v30"/>
+      <path d="M155 420l-10 8"/>
+      <path d="M155 420l10 8"/>
+      <path d="M155 420l0 8"/>
+      <path d="M215 390v30"/>
+      <path d="M215 420l-10 8"/>
+      <path d="M215 420l10 8"/>
+      <path d="M215 420l0 8"/>
+    </g>
+
+    <!-- Head — large round for kawaii proportion -->
+    <circle cx="145" cy="195" r="80" fill="#FAF3E3"/>
+    <circle cx="145" cy="195" r="80" fill="none" stroke="#2C1D10" stroke-width="6" opacity="0.12"/>
+
+    <!-- Comb (terracotta, on top of head) -->
+    <path d="M120 118c0-16 8-30 14-30s4 14 10 14 6-22 12-22 6 14 12 20 6-16 10-16 6 12 4 24"
+          fill="#D05E3A"/>
+    <path d="M120 118c0-16 8-30 14-30s4 14 10 14 6-22 12-22 6 14 12 20 6-16 10-16 6 12 4 24"
+          fill="none" stroke="#2C1D10" stroke-width="3" opacity="0.15"/>
+
+    <!-- Leaf hat sitting on head (forest green accent) -->
+    <g>
+      <!-- Leaf stem -->
+      <path d="M170 128c6-12 14-22 22-28" stroke="#3B4A2B" stroke-width="4" stroke-linecap="round" fill="none"/>
+      <!-- Leaf blade -->
+      <path d="M170 128c8-20 28-36 42-34-4 14-18 30-36 34" fill="#3B4A2B"/>
+      <!-- Leaf vein -->
+      <path d="M172 128c6-14 20-28 34-30" stroke="#FAF3E3" stroke-width="1.5" opacity="0.4" fill="none"/>
+      <!-- Tiny second leaf -->
+      <path d="M178 122c4-10 14-18 22-16-2 8-10 16-20 16" fill="#3B4A2B" opacity="0.7"/>
+    </g>
+
+    <!-- Eyes — big kawaii sparkly eyes -->
+    <!-- Left eye -->
+    <circle cx="118" cy="188" r="18" fill="#2C1D10"/>
+    <circle cx="112" cy="181" r="6" fill="#FAF3E3"/>
+    <circle cx="122" cy="191" r="3" fill="#FAF3E3"/>
+    <!-- Right eye -->
+    <circle cx="168" cy="188" r="18" fill="#2C1D10"/>
+    <circle cx="162" cy="181" r="6" fill="#FAF3E3"/>
+    <circle cx="172" cy="191" r="3" fill="#FAF3E3"/>
+
+    <!-- Blush spots (kawaii pink cheeks) -->
+    <ellipse cx="100" cy="210" rx="14" ry="9" fill="#D05E3A" opacity="0.25"/>
+    <ellipse cx="186" cy="210" rx="14" ry="9" fill="#D05E3A" opacity="0.25"/>
+
+    <!-- Beak (amber) -->
+    <path d="M133 212l-18 10 18 10z" fill="#D4A130"/>
+    <path d="M133 212l-18 10 18 10z" fill="none" stroke="#2C1D10" stroke-width="2.5" opacity="0.15"/>
+
+    <!-- Tiny smile -->
+    <path d="M128 230c6 5 18 5 24 0" stroke="#2C1D10" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.35"/>
+
+    <!-- Wattle (small, under beak) -->
+    <path d="M125 232c-3 4-3 12 1 15 3-4 5-8 2-15" fill="#D05E3A" opacity="0.7"/>
+
+  </g>
+
+  <!-- ═══ WORDMARK ═══ -->
+  <g id="wordmark">
+
+    <!-- "We The Farm" text using system serif font -->
+    <text x="380" y="240" font-family="Georgia, 'Times New Roman', serif"
+          font-size="96" font-weight="bold" fill="#2C1D10" letter-spacing="2">
+      We The
+    </text>
+    <text x="380" y="350" font-family="Georgia, 'Times New Roman', serif"
+          font-size="96" font-weight="bold" fill="#2C1D10" letter-spacing="2">
+      Farm
+    </text>
+
+    <!-- Small decorative leaf between lines -->
+    <path d="M605 268c6-14 20-26 32-24-3 10-14 22-28 24" fill="#3B4A2B" opacity="0.6"/>
+    <path d="M607 268c5-10 15-20 26-20" stroke="#3B4A2B" stroke-width="1.5" fill="none" opacity="0.3"/>
+
+  </g>
+
+  <!-- ═══ TAGLINE ═══ -->
+  <g id="tagline">
+    <text x="380" y="405" font-family="Helvetica, Arial, sans-serif"
+          font-size="30" fill="#3B4A2B" letter-spacing="6" opacity="0.7">
+      COMMUNITY ROOFTOP FARM
+    </text>
+  </g>
+
+</svg>

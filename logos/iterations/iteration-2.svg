@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 512">
+
+  <!-- === ICON (left ~38%) === -->
+  <g id="icon" transform="translate(32, 56)">
+
+    <!-- Sun peeking behind building -->
+    <g id="sun">
+      <circle cx="300" cy="120" r="36" fill="#EBC85B"/>
+      <circle cx="300" cy="120" r="28" fill="#D4A130"/>
+      <!-- rays -->
+      <line x1="300" y1="74" x2="300" y2="62" stroke="#EBC85B" stroke-width="6" stroke-linecap="round"/>
+      <line x1="332" y1="88" x2="340" y2="78" stroke="#EBC85B" stroke-width="5" stroke-linecap="round"/>
+      <line x1="346" y1="120" x2="358" y2="120" stroke="#EBC85B" stroke-width="5" stroke-linecap="round"/>
+      <line x1="268" y1="88" x2="260" y2="78" stroke="#EBC85B" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Building — cute, round, squat barn/house -->
+    <g id="building">
+      <!-- Main body — rounded rectangle, chunky -->
+      <rect x="68" y="210" width="220" height="160" rx="16" fill="#D05E3A"/>
+
+      <!-- Roof — pointy barn roof -->
+      <path d="M50 218 L178 130 L306 218 Z" fill="#B94E2E"/>
+      <path d="M58 218 L178 138 L298 218 Z" fill="#D05E3A"/>
+
+      <!-- Roof ridge accent -->
+      <line x1="178" y1="134" x2="178" y2="148" stroke="#D4A130" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- Windows — big round "eyes" -->
+      <circle cx="128" cy="270" r="28" fill="#EBC85B"/>
+      <circle cx="228" cy="270" r="28" fill="#EBC85B"/>
+      <!-- Window shine -->
+      <circle cx="120" cy="262" r="8" fill="#FAF3E3" opacity="0.6"/>
+      <circle cx="220" cy="262" r="8" fill="#FAF3E3" opacity="0.6"/>
+      <!-- Window cross panes -->
+      <line x1="128" y1="242" x2="128" y2="298" stroke="#D4A130" stroke-width="3"/>
+      <line x1="100" y1="270" x2="156" y2="270" stroke="#D4A130" stroke-width="3"/>
+      <line x1="228" y1="242" x2="228" y2="298" stroke="#D4A130" stroke-width="3"/>
+      <line x1="200" y1="270" x2="256" y2="270" stroke="#D4A130" stroke-width="3"/>
+
+      <!-- Door — cute arch -->
+      <rect x="155" y="318" width="46" height="52" rx="23" fill="#2C1D10"/>
+      <circle cx="190" cy="346" r="4" fill="#D4A130"/>
+
+      <!-- Ground line -->
+      <rect x="50" y="368" width="256" height="8" rx="4" fill="#3B4A2B" opacity="0.3"/>
+    </g>
+
+    <!-- === Rooftop Garden — bold, chunky, cute === -->
+    <g id="rooftop-garden">
+      <!-- Green base strip on roof -->
+      <path d="M58 218 L298 218" stroke="#3B4A2B" stroke-width="14" stroke-linecap="round"/>
+
+      <!-- Big bold bush clusters -->
+      <ellipse cx="95" cy="208" rx="34" ry="22" fill="#3B4A2B"/>
+      <ellipse cx="155" cy="200" rx="40" ry="28" fill="#4A6B30"/>
+      <ellipse cx="220" cy="205" rx="36" ry="24" fill="#3B4A2B"/>
+      <ellipse cx="270" cy="210" rx="28" ry="18" fill="#4A6B30"/>
+
+      <!-- Top layer bushes — rounder, overlapping -->
+      <ellipse cx="120" cy="196" rx="26" ry="18" fill="#5C7F3A"/>
+      <ellipse cx="190" cy="188" rx="30" ry="22" fill="#4A6B30"/>
+      <ellipse cx="250" cy="196" rx="24" ry="16" fill="#5C7F3A"/>
+
+      <!-- Cute big sprout growing from center -->
+      <g id="hero-sprout">
+        <path d="M178 190 C176 165 178 140 180 118" stroke="#3B4A2B" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <!-- Left leaf — big, round -->
+        <ellipse cx="162" cy="142" rx="22" ry="14" fill="#5C7F3A" transform="rotate(-25 162 142)"/>
+        <path d="M162 142 L178 155" stroke="#3B4A2B" stroke-width="2" fill="none" opacity="0.4"/>
+        <!-- Right leaf — big, round -->
+        <ellipse cx="198" cy="134" rx="20" ry="13" fill="#3B4A2B" transform="rotate(20 198 134)"/>
+        <path d="M198 134 L182 148" stroke="#2C1D10" stroke-width="2" fill="none" opacity="0.3"/>
+        <!-- Tiny top leaf unfurling -->
+        <path d="M180 118 C175 108 168 104 164 106" stroke="#5C7F3A" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <ellipse cx="164" cy="105" rx="8" ry="5" fill="#7CAA4E" transform="rotate(-40 164 105)"/>
+      </g>
+
+      <!-- Cute tomato (left side) -->
+      <circle cx="88" cy="192" r="12" fill="#D05E3A"/>
+      <circle cx="85" cy="188" r="3" fill="#E8795E" opacity="0.5"/>
+      <path d="M86 180 C88 176 92 176 94 180" stroke="#3B4A2B" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+      <!-- Cute tomato (right side, smaller) -->
+      <circle cx="262" cy="194" r="9" fill="#D05E3A"/>
+      <circle cx="260" cy="191" r="2.5" fill="#E8795E" opacity="0.5"/>
+      <path d="M260 186 C262 183 265 183 267 186" stroke="#3B4A2B" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+      <!-- Small flower accent -->
+      <g transform="translate(230, 178)">
+        <circle cx="0" cy="0" r="6" fill="#EBC85B"/>
+        <circle cx="0" cy="0" r="3" fill="#D4A130"/>
+        <circle cx="0" cy="-7" r="4" fill="#EBC85B" opacity="0.7"/>
+        <circle cx="6.5" cy="-2" r="4" fill="#EBC85B" opacity="0.7"/>
+        <circle cx="4" cy="6" r="4" fill="#EBC85B" opacity="0.7"/>
+        <circle cx="-4" cy="6" r="4" fill="#EBC85B" opacity="0.7"/>
+        <circle cx="-6.5" cy="-2" r="4" fill="#EBC85B" opacity="0.7"/>
+      </g>
+    </g>
+
+    <!-- Cute bee -->
+    <g id="bee" transform="translate(296, 90)">
+      <ellipse cx="0" cy="0" rx="10" ry="8" fill="#EBC85B"/>
+      <line x1="-3" y1="-8" x2="-3" y2="8" stroke="#2C1D10" stroke-width="2.5"/>
+      <line x1="3" y1="-7" x2="3" y2="7" stroke="#2C1D10" stroke-width="2.5"/>
+      <circle cx="0" cy="-2" r="4" fill="#2C1D10"/>
+      <!-- Wings -->
+      <ellipse cx="-6" cy="-10" rx="7" ry="5" fill="#FAF3E3" opacity="0.6" transform="rotate(-15 -6 -10)"/>
+      <ellipse cx="6" cy="-10" rx="7" ry="5" fill="#FAF3E3" opacity="0.6" transform="rotate(15 6 -10)"/>
+      <!-- Dotted trail -->
+      <path d="M-16 6 Q-24 -4 -30 4 Q-36 12 -44 2" stroke="#2C1D10" stroke-width="1.5" fill="none" stroke-dasharray="2 4" opacity="0.2"/>
+    </g>
+
+  </g>
+
+  <!-- === WORDMARK (right ~58%) === -->
+  <g id="wordmark">
+
+    <!-- "WE THE" — small, spaced, uppercase -->
+    <text x="440" y="208" font-family="Georgia, 'Times New Roman', serif" font-size="36" fill="#2C1D10" letter-spacing="12" opacity="0.55">
+      WE THE
+    </text>
+
+    <!-- "Farm" — big, bold, chunky -->
+    <text x="432" y="310" font-family="Georgia, 'Times New Roman', serif" font-size="120" font-weight="bold" fill="#3B4A2B" letter-spacing="3">
+      Farm
+    </text>
+
+    <!-- Hand-drawn wobbly underline -->
+    <path d="M436 324 Q510 340 590 330 Q670 320 750 334 Q810 342 860 328" stroke="#D05E3A" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+    <!-- Small leaf growing from the 'F' -->
+    <g transform="translate(448, 196)">
+      <path d="M0 0 C-4 -10 -2 -20 4 -24" stroke="#5C7F3A" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <ellipse cx="6" cy="-26" rx="10" ry="7" fill="#5C7F3A" transform="rotate(-30 6 -26)"/>
+      <ellipse cx="-2" cy="-22" rx="8" ry="5" fill="#3B4A2B" transform="rotate(15 -2 -22)"/>
+    </g>
+
+    <!-- Tiny heart/sprout between WE THE and Farm -->
+    <g transform="translate(640, 224)">
+      <path d="M0 6 C-2 0 -8 -2 -8 -8 C-8 -12 -4 -14 0 -10 C4 -14 8 -12 8 -8 C8 -2 2 0 0 6 Z" fill="#D05E3A" opacity="0.25"/>
+    </g>
+
+  </g>
+
+  <!-- === TAGLINE === -->
+  <g id="tagline">
+    <text x="446" y="374" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#D4A130" letter-spacing="6">
+      COMPOST · GROW · SHARE
+    </text>
+  </g>
+
+</svg>

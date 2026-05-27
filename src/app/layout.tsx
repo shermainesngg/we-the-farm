@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Vollkorn, Albert_Sans } from "next/font/google";
+import { Young_Serif, Figtree } from "next/font/google";
+import { CartProvider } from "@/contexts/CartContext";
 import "./globals.css";
 
-const vollkorn = Vollkorn({
-  variable: "--font-vollkorn",
+const youngSerif = Young_Serif({
+  variable: "--font-young-serif",
+  weight: "400",
   subsets: ["latin"],
   display: "swap",
 });
 
-const albertSans = Albert_Sans({
-  variable: "--font-albert",
+const figtree = Figtree({
+  variable: "--font-figtree",
   subsets: ["latin"],
   display: "swap",
 });
@@ -28,9 +30,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${vollkorn.variable} ${albertSans.variable} h-full antialiased`}
+      className={`${youngSerif.variable} ${figtree.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <CartProvider>{children}</CartProvider>
+      </body>
     </html>
   );
 }

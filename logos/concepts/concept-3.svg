@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 512">
+  <!--
+    We The Farm — Concept 3: Organic Lettering with Botanical Accents
+    Community rooftop farm in Singapore
+    Colors: Forest #3B4A2B | Terracotta #D05E3A | Amber #D4A130 | Honey #EBC85B | Cream #FAF3E3 | Earth #2C1D10
+  -->
+
+  <rect width="1024" height="512" fill="#FAF3E3"/>
+
+  <!-- ==================== ICON: Leaf Cluster ==================== -->
+  <g id="icon" transform="translate(72, 130)">
+    <!-- Central large leaf -->
+    <path d="M75,210 C65,170 35,120 38,70 C40,35 55,8 75,2 C95,8 110,35 112,70 C115,120 85,170 75,210 Z"
+          fill="#3B4A2B"/>
+    <!-- Central vein -->
+    <path d="M75,18 Q74,80 74,140 Q75,180 75,200"
+          fill="none" stroke="#FAF3E3" stroke-width="1.6" opacity="0.45"/>
+    <!-- Side veins -->
+    <path d="M75,48 L58,68" fill="none" stroke="#FAF3E3" stroke-width="1" opacity="0.35"/>
+    <path d="M75,48 L92,68" fill="none" stroke="#FAF3E3" stroke-width="1" opacity="0.35"/>
+    <path d="M74,82 L55,105" fill="none" stroke="#FAF3E3" stroke-width="1" opacity="0.35"/>
+    <path d="M74,82 L95,105" fill="none" stroke="#FAF3E3" stroke-width="1" opacity="0.35"/>
+    <path d="M74,118 L58,140" fill="none" stroke="#FAF3E3" stroke-width="1" opacity="0.3"/>
+    <path d="M74,118 L92,140" fill="none" stroke="#FAF3E3" stroke-width="1" opacity="0.3"/>
+
+    <!-- Left leaf -->
+    <path d="M32,200 C22,160 2,120 5,80 C7,55 18,38 32,32 C42,45 50,70 48,95 C45,140 38,175 32,200 Z"
+          fill="#3B4A2B" opacity="0.72"/>
+    <path d="M30,42 Q31,90 31,140 Q31,170 32,190"
+          fill="none" stroke="#FAF3E3" stroke-width="1" opacity="0.3"/>
+
+    <!-- Right leaf -->
+    <path d="M118,200 C128,160 148,120 145,80 C143,55 132,38 118,32 C108,45 100,70 102,95 C105,140 112,175 118,200 Z"
+          fill="#3B4A2B" opacity="0.72"/>
+    <path d="M120,42 Q119,90 119,140 Q119,170 118,190"
+          fill="none" stroke="#FAF3E3" stroke-width="1" opacity="0.3"/>
+
+    <!-- Tiny accent leaves at top -->
+    <path d="M75,5 C70,0 58,-12 48,-8 C38,-4 48,8 58,10 Q67,10 75,5 Z"
+          fill="#D05E3A" opacity="0.85"/>
+    <path d="M75,5 C80,0 92,-12 102,-8 C112,-4 102,8 92,10 Q83,10 75,5 Z"
+          fill="#D4A130" opacity="0.85"/>
+
+    <!-- Stem -->
+    <path d="M75,210 Q74,228 75,240"
+          fill="none" stroke="#3B4A2B" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- ==================== WORDMARK ==================== -->
+  <g id="wordmark">
+
+    <!-- "We The" — stacked on top, lighter weight -->
+    <g id="we-the">
+      <text x="345" y="175"
+            font-family="Georgia, 'Times New Roman', serif"
+            font-size="64"
+            font-weight="normal"
+            letter-spacing="6"
+            fill="#2C1D10"
+            text-anchor="middle">We The</text>
+
+      <!-- Tiny flower sitting on the W -->
+      <g transform="translate(258, 130)">
+        <circle cx="0" cy="0" r="5" fill="#D05E3A" opacity="0.85"/>
+        <circle cx="-5.5" cy="-3" r="4" fill="#D4A130" opacity="0.75"/>
+        <circle cx="5.5" cy="-3" r="4" fill="#D4A130" opacity="0.75"/>
+        <circle cx="-3" cy="-7" r="3.5" fill="#D05E3A" opacity="0.7"/>
+        <circle cx="3" cy="-7" r="3.5" fill="#D05E3A" opacity="0.7"/>
+        <circle cx="0" cy="-3.5" r="3" fill="#EBC85B"/>
+        <!-- Tiny stem -->
+        <path d="M0,5 L0,12" stroke="#3B4A2B" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M0,8 C0,8 -5,4 -7,1" stroke="#3B4A2B" stroke-width="0.8" stroke-linecap="round" fill="none"/>
+      </g>
+    </g>
+
+    <!-- "Farm" — large, bold, the star -->
+    <g id="farm-text">
+      <text x="370" y="290"
+            font-family="Georgia, 'Times New Roman', serif"
+            font-size="130"
+            font-weight="bold"
+            letter-spacing="8"
+            fill="#3B4A2B"
+            text-anchor="middle">Farm</text>
+
+      <!-- Leaf sprouting from top of F -->
+      <g transform="translate(275, 190)">
+        <!-- Main terracotta leaf -->
+        <path d="M0,0 C0,0 15,-18 28,-24 C36,-28 42,-24 40,-17 C38,-10 28,-4 18,-1 Q8,2 0,0 Z"
+              fill="#D05E3A" opacity="0.88"/>
+        <path d="M2,0 C2,0 16,-8 30,-12" fill="none" stroke="#FAF3E3" stroke-width="0.7" opacity="0.35"/>
+        <!-- Smaller green leaf -->
+        <path d="M5,-3 C5,-3 14,-20 22,-26 C27,-29 31,-26 30,-21 C29,-16 22,-10 15,-6 Q9,-3 5,-3 Z"
+              fill="#3B4A2B" opacity="0.65"/>
+      </g>
+
+      <!-- Vine curling from top-right of m -->
+      <g transform="translate(498, 190)">
+        <path d="M0,0 C8,-6 16,-14 20,-22 C24,-30 20,-36 14,-34 C8,-32 10,-24 16,-18 C22,-12 30,-10 34,-14"
+              fill="none" stroke="#D4A130" stroke-width="2.2" stroke-linecap="round" opacity="0.82"/>
+        <!-- Leaf on vine tip -->
+        <path d="M34,-14 C34,-14 40,-22 42,-28 C42,-31 40,-32 38,-30 C36,-28 34,-18 34,-14 Z"
+              fill="#3B4A2B" opacity="0.65"/>
+        <!-- Second tiny leaf -->
+        <path d="M16,-34 C16,-34 10,-42 12,-46 C13,-48 15,-47 15,-44 C15,-40 16,-36 16,-34 Z"
+              fill="#D05E3A" opacity="0.55"/>
+      </g>
+
+      <!-- Small tomato dotting above the 'a' -->
+      <g transform="translate(388, 178)">
+        <circle cx="0" cy="0" r="9" fill="#D05E3A"/>
+        <circle cx="-3" cy="-3" r="2.5" fill="#EBC85B" opacity="0.2"/>
+        <!-- Calyx / stem -->
+        <path d="M-1,-9 C-1,-9 -3,-15 0,-17 C2,-18 4,-15 3,-11 Q2,-9 1,-9 Z" fill="#3B4A2B"/>
+        <path d="M2,-9 C2,-9 5,-14 7,-13 C9,-12 7,-9 4,-9 Z" fill="#3B4A2B" opacity="0.7"/>
+      </g>
+    </g>
+
+    <!-- Decorative vine element connecting the two text lines -->
+    <path d="M232,185 C228,195 226,208 230,215 C234,222 242,218 240,210 C238,202 230,200 232,210"
+          fill="none" stroke="#D4A130" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+
+  </g>
+
+  <!-- ==================== TAGLINE ==================== -->
+  <g id="tagline">
+    <text x="370" y="360"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="20"
+          font-style="italic"
+          letter-spacing="5"
+          fill="#D05E3A"
+          opacity="0.75"
+          text-anchor="middle">Compost. Grow. Share.</text>
+  </g>
+
+  <!-- ==================== SCATTERED BOTANICAL DETAILS ==================== -->
+
+  <!-- Seed dots near tagline -->
+  <circle cx="240" cy="355" r="2" fill="#D4A130" opacity="0.4"/>
+  <circle cx="234" cy="348" r="1.5" fill="#D05E3A" opacity="0.35"/>
+  <circle cx="500" cy="352" r="2" fill="#D4A130" opacity="0.4"/>
+  <circle cx="508" cy="359" r="1.5" fill="#3B4A2B" opacity="0.35"/>
+
+  <!-- Tiny floating leaves near wordmark -->
+  <g transform="translate(540, 178)" opacity="0.35">
+    <path d="M0,0 C0,0 10,-8 18,-6 C22,-5 21,0 17,2 C13,4 2,2 0,0 Z" fill="#3B4A2B"/>
+  </g>
+  <g transform="translate(548, 168)" opacity="0.28">
+    <path d="M0,0 C0,0 8,-6 14,-4 C17,-3 16,1 13,2 C10,3 2,1 0,0 Z" fill="#D4A130"/>
+  </g>
+
+  <!-- Small sprout at bottom-left -->
+  <g transform="translate(195, 388)" opacity="0.45">
+    <path d="M0,8 L0,-2" stroke="#3B4A2B" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M0,-2 C0,-2 -8,-12 -5,-16 C-2,-18 1,-12 0,-2 Z" fill="#3B4A2B"/>
+    <path d="M0,-2 C0,-2 8,-12 5,-16 C2,-18 -1,-12 0,-2 Z" fill="#D4A130"/>
+  </g>
+
+  <!-- Underline flourish below tagline -->
+  <path d="M300,375 C320,378 350,380 370,378 C390,376 420,374 440,377"
+        fill="none" stroke="#D4A130" stroke-width="1.2" stroke-linecap="round" opacity="0.35"/>
+
+</svg>

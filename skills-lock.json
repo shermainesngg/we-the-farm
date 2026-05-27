@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "skills": {
+    "animate": {
+      "source": "delphi-ai/animate-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "ffe5d0020ae97e7af2eeab79a3cdb2d13da004cc998dff6817b071308923b71f"
+    },
+    "animejs": {
+      "source": "BowTiedSwan/animejs-skills",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "7c9f6df3e3d1ac266dfbaf4f4675e0c34f1f8016ca9a6a446bd186ab38b532d4"
+    },
+    "design-motion-principles": {
+      "source": "kylezantos/design-motion-principles",
+      "sourceType": "github",
+      "skillPath": "skills/design-motion-principles/SKILL.md",
+      "computedHash": "657a2aad00ad6eaa2559991f8809082968abab45d0603e2eab03ce414a730a92"
+    },
+    "framer-motion": {
+      "source": "Schoepplake/framer-motion-skill",
+      "sourceType": "github",
+      "skillPath": "skills/framer-motion/SKILL.md",
+      "computedHash": "57dd9b9202e4883bc3b3584d71d40ac49a156f70dc58b808204d810ed1698798"
+    },
+    "gsap-core": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "skillPath": "skills/gsap-core/SKILL.md",
+      "computedHash": "c4a01101d9e1aafbf4b49f75d74f9349790d8741981ba0237c990093863035a6"
+    },
+    "gsap-plugins": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "skillPath": "skills/gsap-plugins/SKILL.md",
+      "computedHash": "791bda0e6e460511fe82a78e745db519b88ffaeeab4d04a74879a03ca4f41740"
+    },
+    "gsap-scrolltrigger": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "skillPath": "skills/gsap-scrolltrigger/SKILL.md",
+      "computedHash": "1cdc5647693783cb7a662d84a5de434c88a051ed56b4d33597c9b5782b5973e6"
+    },
+    "logo-designer": {
+      "source": "neonwatty/logo-designer-skill",
+      "sourceType": "github",
+      "skillPath": "skills/logo-designer/SKILL.md",
+      "computedHash": "37f00324349c15112c606110548566ee76390c234cecb5801a175c4e0823f729"
+    },
+    "logo-generator": {
+      "source": "op7418/logo-generator-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "d949329c11df3efa25bc1cc387c92fc8b86077883fcd737803675e42e2da75eb"
+    },
+    "motion-design": {
+      "source": "lottiefiles/motion-design-skill",
+      "sourceType": "github",
+      "skillPath": "skills/motion-design/SKILL.md",
+      "computedHash": "9fcf9130cc46ee8fd1d8e09a9263347a9d76efbcbfa46591cc4cefaf19bbb453"
+    },
+    "supermemory": {
+      "source": "supermemoryai/skills",
+      "sourceType": "github",
+      "skillPath": "supermemory/SKILL.md",
+      "computedHash": "86b968194da4c2dc149df41674d805bdbf4abf009ff85a43752af35449a76fd6"
+    },
+    "supermemory-cli": {
+      "source": "supermemoryai/skills",
+      "sourceType": "github",
+      "skillPath": "supermemory-cli/SKILL.md",
+      "computedHash": "df4b22c4148c9b5b4e62f8ba1119e3c2b9a66f4f3dbcfa1855648e244ddc9d78"
+    },
+    "svg-animations": {
+      "source": "supermemoryai/skills",
+      "sourceType": "github",
+      "skillPath": "svg-animations/SKILL.md",
+      "computedHash": "9be4b3e0afe9d3cbb1bcf238f8504f9a23552f742350fbef9483070112ac1977"
+    },
+    "wiggle": {
+      "source": "talknerdytome-labs/wiggle-claude-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "ce0170577c73049bdabf18aed639a13974f9b8f470b6762875e5a662db74b418"
+    }
+  }
+}

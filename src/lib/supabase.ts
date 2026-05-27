@@ -28,3 +28,19 @@ export type Booking = {
   created_at: string;
   events?: Event;
 };
+
+export type Product = {
+  id: string;
+  title: string;
+  description: string | null;
+  price: number;
+  image_url: string | null;
+  category: "workshop" | "compost";
+  stock: number | null;
+  date: string | null;
+  time: string | null;
+  location: string | null;
+  max_attendees: number | null;
+  is_published: boolean;
+  created_at: string;
+};

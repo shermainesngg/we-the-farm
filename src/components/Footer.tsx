@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
           <div>
             <Link href="/" className="font-heading text-2xl tracking-tight">
-              We The Farm
+              wethefarm
             </Link>
             <p className="mt-3 text-cream/50 text-sm leading-relaxed max-w-xs">
               Platform for Exchange, Compost &amp; Produce.
@@ -18,26 +18,32 @@ export default function Footer() {
 
           <div className="flex gap-16 text-sm">
             <div>
-              <h3 className="text-[11px] tracking-[0.2em] uppercase text-cream/30 mb-5">
+              <h3 className="text-[11px] tracking-[0.2em] uppercase text-honey/50 mb-5">
                 Explore
               </h3>
               <div className="flex flex-col gap-3">
                 <Link
                   href="/events"
-                  className="text-cream/60 hover:text-cream transition-colors"
+                  className="text-cream/60 hover:text-honey transition-colors"
                 >
                   Events
                 </Link>
                 <Link
+                  href="/shop"
+                  className="text-cream/60 hover:text-honey transition-colors"
+                >
+                  Shop
+                </Link>
+                <Link
                   href="/about"
-                  className="text-cream/60 hover:text-cream transition-colors"
+                  className="text-cream/60 hover:text-honey transition-colors"
                 >
                   About
                 </Link>
               </div>
             </div>
             <div>
-              <h3 className="text-[11px] tracking-[0.2em] uppercase text-cream/30 mb-5">
+              <h3 className="text-[11px] tracking-[0.2em] uppercase text-honey/50 mb-5">
                 Connect
               </h3>
               <div className="flex flex-col gap-3">
@@ -45,7 +51,7 @@ export default function Footer() {
                   href="https://www.instagram.com/wethefarm"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-cream/60 hover:text-cream transition-colors"
+                  className="text-cream/60 hover:text-honey transition-colors"
                 >
                   Instagram
                 </a>

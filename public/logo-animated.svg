@@ -1,0 +1,302 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 512">
+
+  <style>
+    /* Sun rays gentle pulse */
+    #sun line {
+      animation: ray-pulse 3s ease-in-out infinite;
+      transform-origin: 300px 120px;
+    }
+    #sun line:nth-child(3) { animation-delay: 0s; }
+    #sun line:nth-child(4) { animation-delay: 0.4s; }
+    #sun line:nth-child(5) { animation-delay: 0.8s; }
+    #sun line:nth-child(6) { animation-delay: 1.2s; }
+    @keyframes ray-pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.7); }
+    }
+
+    /* Sun glow */
+    #sun circle:first-child {
+      animation: sun-glow 4s ease-in-out infinite;
+    }
+    @keyframes sun-glow {
+      0%, 100% { r: 36; opacity: 1; }
+      50% { r: 40; opacity: 0.85; }
+    }
+
+    /* Bee floating path */
+    #bee {
+      animation: bee-float 6s ease-in-out infinite;
+    }
+    @keyframes bee-float {
+      0%   { transform: translate(296px, 90px); }
+      25%  { transform: translate(310px, 78px); }
+      50%  { transform: translate(290px, 70px); }
+      75%  { transform: translate(280px, 82px); }
+      100% { transform: translate(296px, 90px); }
+    }
+
+    /* Bee wing buzz */
+    #bee ellipse[opacity="0.6"] {
+      animation: wing-buzz 0.12s ease-in-out infinite alternate;
+    }
+    #bee ellipse[opacity="0.6"]:last-of-type {
+      animation-delay: 0.06s;
+    }
+    @keyframes wing-buzz {
+      0% { transform: scaleY(1); }
+      100% { transform: scaleY(0.5); }
+    }
+
+    /* Hero sprout gentle sway */
+    #hero-sprout {
+      animation: sprout-sway 4s ease-in-out infinite;
+      transform-origin: 178px 190px;
+    }
+    @keyframes sprout-sway {
+      0%, 100% { transform: rotate(0deg); }
+      33% { transform: rotate(3deg); }
+      66% { transform: rotate(-2deg); }
+    }
+
+    /* Bush clusters gentle breathing */
+    #rooftop-garden > ellipse {
+      animation: bush-breathe 5s ease-in-out infinite;
+    }
+    #rooftop-garden > ellipse:nth-child(2) { animation-delay: 0.3s; }
+    #rooftop-garden > ellipse:nth-child(3) { animation-delay: 0.6s; }
+    #rooftop-garden > ellipse:nth-child(4) { animation-delay: 0.9s; }
+    #rooftop-garden > ellipse:nth-child(5) { animation-delay: 1.2s; }
+    #rooftop-garden > ellipse:nth-child(6) { animation-delay: 0.5s; }
+    #rooftop-garden > ellipse:nth-child(7) { animation-delay: 0.8s; }
+    #rooftop-garden > ellipse:nth-child(8) { animation-delay: 1.1s; }
+    @keyframes bush-breathe {
+      0%, 100% { transform: scaleY(1); }
+      50% { transform: scaleY(1.05); }
+    }
+
+    /* Flower spin */
+    #rooftop-garden > g:last-of-type {
+      animation: flower-spin 8s linear infinite;
+      transform-origin: 230px 178px;
+    }
+    @keyframes flower-spin {
+      0% { transform: translate(230px, 178px) rotate(0deg); }
+      100% { transform: translate(230px, 178px) rotate(360deg); }
+    }
+
+    /* Window twinkle */
+    #building circle[fill="#FAF3E3"] {
+      animation: twinkle 3s ease-in-out infinite;
+    }
+    #building circle[fill="#FAF3E3"]:nth-of-type(2) {
+      animation-delay: 1.5s;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+
+    /* Wordmark fade-in and slide */
+    #wordmark {
+      animation: text-enter 1.2s ease-out both;
+    }
+    @keyframes text-enter {
+      0% { opacity: 0; transform: translateX(20px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Tagline fade-in delayed */
+    #tagline {
+      animation: tagline-enter 1s ease-out 0.8s both;
+    }
+    @keyframes tagline-enter {
+      0% { opacity: 0; transform: translateY(8px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Underline draw-in */
+    #wordmark > path {
+      stroke-dasharray: 440;
+      stroke-dashoffset: 440;
+      animation: draw-line 1.5s ease-out 1s forwards;
+    }
+    @keyframes draw-line {
+      to { stroke-dashoffset: 0; }
+    }
+
+    /* Icon entrance */
+    #icon {
+      animation: icon-enter 0.8s ease-out both;
+    }
+    @keyframes icon-enter {
+      0% { opacity: 0; transform: translate(32px, 66px) scale(0.9); }
+      100% { opacity: 1; transform: translate(32px, 56px) scale(1); }
+    }
+
+    /* Kopi steam */
+    #kopi-cup path[opacity="0.5"] {
+      animation: kopi-steam 3s ease-in-out infinite;
+    }
+    @keyframes kopi-steam {
+      0%, 100% { opacity: 0.5; transform: translateY(0); }
+      50% { opacity: 0.15; transform: translateY(-4px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+
+  <!-- === ICON (left ~38%) === -->
+  <g id="icon" transform="translate(32, 56)">
+
+    <!-- Sun peeking behind building -->
+    <g id="sun">
+      <circle cx="300" cy="120" r="36" fill="#EBC85B"/>
+      <circle cx="300" cy="120" r="28" fill="#D4A130"/>
+      <!-- rays -->
+      <line x1="300" y1="74" x2="300" y2="62" stroke="#EBC85B" stroke-width="6" stroke-linecap="round"/>
+      <line x1="332" y1="88" x2="340" y2="78" stroke="#EBC85B" stroke-width="5" stroke-linecap="round"/>
+      <line x1="346" y1="120" x2="358" y2="120" stroke="#EBC85B" stroke-width="5" stroke-linecap="round"/>
+      <line x1="268" y1="88" x2="260" y2="78" stroke="#EBC85B" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Building — cute, round, squat barn/house -->
+    <g id="building">
+      <!-- Main body — rounded rectangle, chunky -->
+      <rect x="68" y="210" width="220" height="160" rx="16" fill="#D05E3A"/>
+
+      <!-- Roof — pointy barn roof -->
+      <path d="M50 218 L178 130 L306 218 Z" fill="#B94E2E"/>
+      <path d="M58 218 L178 138 L298 218 Z" fill="#D05E3A"/>
+
+      <!-- Roof ridge accent -->
+      <line x1="178" y1="134" x2="178" y2="148" stroke="#D4A130" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- Windows — big round "eyes" -->
+      <circle cx="128" cy="270" r="28" fill="#EBC85B"/>
+      <circle cx="228" cy="270" r="28" fill="#EBC85B"/>
+      <!-- Window shine -->
+      <circle cx="120" cy="262" r="8" fill="#FAF3E3" opacity="0.6"/>
+      <circle cx="220" cy="262" r="8" fill="#FAF3E3" opacity="0.6"/>
+      <!-- Window cross panes -->
+      <line x1="128" y1="242" x2="128" y2="298" stroke="#D4A130" stroke-width="3"/>
+      <line x1="100" y1="270" x2="156" y2="270" stroke="#D4A130" stroke-width="3"/>
+      <line x1="228" y1="242" x2="228" y2="298" stroke="#D4A130" stroke-width="3"/>
+      <line x1="200" y1="270" x2="256" y2="270" stroke="#D4A130" stroke-width="3"/>
+
+      <!-- Door — cute arch -->
+      <rect x="155" y="318" width="46" height="52" rx="23" fill="#2C1D10"/>
+      <circle cx="190" cy="346" r="4" fill="#D4A130"/>
+
+      <!-- Ground line -->
+      <rect x="50" y="368" width="256" height="8" rx="4" fill="#3B4A2B" opacity="0.3"/>
+
+      <!-- Cute kopi cup by the door -->
+      <g id="kopi-cup" transform="translate(210, 342)">
+        <path d="M0 0H18L16 24H2L0 0Z" fill="#D4A130" opacity="0.85"/>
+        <path d="M18 6C22 6 24 10 24 14C24 18 22 20 18 20" stroke="#D4A130" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <path d="M-2 0H20" stroke="#D4A130" stroke-width="3" stroke-linecap="round"/>
+        <path d="M6 -4C7 -8 10 -8 11 -4" stroke="#FAF3E3" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+      </g>
+    </g>
+
+    <!-- === Rooftop Garden — bold, chunky, cute === -->
+    <g id="rooftop-garden">
+      <!-- Green base strip on roof -->
+      <path d="M58 218 L298 218" stroke="#3B4A2B" stroke-width="14" stroke-linecap="round"/>
+
+      <!-- Big bold bush clusters -->
+      <ellipse cx="95" cy="208" rx="34" ry="22" fill="#3B4A2B"/>
+      <ellipse cx="155" cy="200" rx="40" ry="28" fill="#4A6B30"/>
+      <ellipse cx="220" cy="205" rx="36" ry="24" fill="#3B4A2B"/>
+      <ellipse cx="270" cy="210" rx="28" ry="18" fill="#4A6B30"/>
+
+      <!-- Top layer bushes — rounder, overlapping -->
+      <ellipse cx="120" cy="196" rx="26" ry="18" fill="#5C7F3A"/>
+      <ellipse cx="190" cy="188" rx="30" ry="22" fill="#4A6B30"/>
+      <ellipse cx="250" cy="196" rx="24" ry="16" fill="#5C7F3A"/>
+
+      <!-- Cute big sprout growing from center -->
+      <g id="hero-sprout">
+        <path d="M178 190 C176 165 178 140 180 118" stroke="#3B4A2B" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <!-- Left leaf — big, round -->
+        <ellipse cx="162" cy="142" rx="22" ry="14" fill="#5C7F3A" transform="rotate(-25 162 142)"/>
+        <path d="M162 142 L178 155" stroke="#3B4A2B" stroke-width="2" fill="none" opacity="0.4"/>
+        <!-- Right leaf — big, round -->
+        <ellipse cx="198" cy="134" rx="20" ry="13" fill="#3B4A2B" transform="rotate(20 198 134)"/>
+        <path d="M198 134 L182 148" stroke="#2C1D10" stroke-width="2" fill="none" opacity="0.3"/>
+        <!-- Tiny top leaf unfurling -->
+        <path d="M180 118 C175 108 168 104 164 106" stroke="#5C7F3A" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <ellipse cx="164" cy="105" rx="8" ry="5" fill="#7CAA4E" transform="rotate(-40 164 105)"/>
+      </g>
+
+      <!-- Cute tomato (left side) -->
+      <circle cx="88" cy="192" r="12" fill="#D05E3A"/>
+      <circle cx="85" cy="188" r="3" fill="#E8795E" opacity="0.5"/>
+      <path d="M86 180 C88 176 92 176 94 180" stroke="#3B4A2B" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+      <!-- Cute tomato (right side, smaller) -->
+      <circle cx="262" cy="194" r="9" fill="#D05E3A"/>
+      <circle cx="260" cy="191" r="2.5" fill="#E8795E" opacity="0.5"/>
+      <path d="M260 186 C262 183 265 183 267 186" stroke="#3B4A2B" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+      <!-- Small flower accent -->
+      <g transform="translate(230, 178)">
+        <circle cx="0" cy="0" r="6" fill="#EBC85B"/>
+        <circle cx="0" cy="0" r="3" fill="#D4A130"/>
+        <circle cx="0" cy="-7" r="4" fill="#EBC85B" opacity="0.7"/>
+        <circle cx="6.5" cy="-2" r="4" fill="#EBC85B" opacity="0.7"/>
+        <circle cx="4" cy="6" r="4" fill="#EBC85B" opacity="0.7"/>
+        <circle cx="-4" cy="6" r="4" fill="#EBC85B" opacity="0.7"/>
+        <circle cx="-6.5" cy="-2" r="4" fill="#EBC85B" opacity="0.7"/>
+      </g>
+    </g>
+
+    <!-- Cute bee -->
+    <g id="bee" transform="translate(296, 90)">
+      <ellipse cx="0" cy="0" rx="10" ry="8" fill="#EBC85B"/>
+      <line x1="-3" y1="-8" x2="-3" y2="8" stroke="#2C1D10" stroke-width="2.5"/>
+      <line x1="3" y1="-7" x2="3" y2="7" stroke="#2C1D10" stroke-width="2.5"/>
+      <circle cx="0" cy="-2" r="4" fill="#2C1D10"/>
+      <!-- Wings -->
+      <ellipse cx="-6" cy="-10" rx="7" ry="5" fill="#FAF3E3" opacity="0.6" transform="rotate(-15 -6 -10)"/>
+      <ellipse cx="6" cy="-10" rx="7" ry="5" fill="#FAF3E3" opacity="0.6" transform="rotate(15 6 -10)"/>
+      <!-- Dotted trail -->
+      <path d="M-16 6 Q-24 -4 -30 4 Q-36 12 -44 2" stroke="#2C1D10" stroke-width="1.5" fill="none" stroke-dasharray="2 4" opacity="0.2"/>
+    </g>
+
+  </g>
+
+  <!-- === WORDMARK (right ~58%) === -->
+  <g id="wordmark">
+
+    <!-- "wethefarm" — all lowercase, single word -->
+    <text x="432" y="280" font-family="Georgia, 'Times New Roman', serif" font-size="80" font-weight="bold" fill="#FFFFFF" letter-spacing="2">
+      wethefarm
+    </text>
+
+    <!-- Hand-drawn wobbly underline -->
+    <path d="M436 296 Q530 312 620 302 Q710 292 800 306 Q860 314 920 300" stroke="#D05E3A" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+    <!-- Small leaf growing from the 'w' -->
+    <g transform="translate(446, 198)">
+      <path d="M0 0 C-4 -10 -2 -20 4 -24" stroke="#5C7F3A" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <ellipse cx="6" cy="-26" rx="10" ry="7" fill="#5C7F3A" transform="rotate(-30 6 -26)"/>
+      <ellipse cx="-2" cy="-22" rx="8" ry="5" fill="#3B4A2B" transform="rotate(15 -2 -22)"/>
+    </g>
+
+  </g>
+
+  <!-- === TAGLINE === -->
+  <g id="tagline">
+    <text x="446" y="340" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#EBC85B" letter-spacing="6">
+      COMPOST · GROW · SHARE
+    </text>
+  </g>
+
+</svg>

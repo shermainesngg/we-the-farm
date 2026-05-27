@@ -1,22 +1,30 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #FDF8F0;
-  --color-foreground: #3E2723;
+  --color-background: #FAF3E3;
+  --color-foreground: #3A2718;
 
-  --color-forest: #2D5016;
-  --color-forest-light: #4A7C34;
-  --color-sage: #7BA05B;
-  --color-cream: #FDF8F0;
-  --color-cream-dark: #F0E8D8;
-  --color-terracotta: #C2703E;
-  --color-earth: #4A3628;
-  --color-amber: #D4A853;
-  --color-soil: #3E2723;
+  --color-forest: #3B4A2B;
+  --color-forest-light: #5C6D3F;
+  --color-leaf: #7A8F5D;
+  --color-sage: #A4B88C;
+  --color-mint: #E8EBD6;
 
-  --font-sans: var(--font-albert);
+  --color-cream: #FAF3E3;
+  --color-cream-dark: #EDE2C8;
+  --color-parchment: #F0E6CE;
+
+  --color-terracotta: #D05E3A;
+  --color-earth: #2C1D10;
+  --color-amber: #D4A130;
+  --color-honey: #EBC85B;
+  --color-sunshine: #FFF3CC;
+  --color-soil: #3A2718;
+  --color-clay: #A85C30;
+
+  --font-sans: var(--font-figtree);
   --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-vollkorn);
+  --font-heading: var(--font-young-serif);
 }
 
 body {
@@ -27,6 +35,21 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading), Georgia, serif;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 40s linear infinite;
+  width: max-content;
+}
+
+.marquee-track-reverse {
+  animation: marquee 35s linear infinite reverse;
+  width: max-content;
 }
 
 @keyframes hero-reveal {
@@ -48,10 +71,80 @@ h1, h2, h3, h4, h5, h6 {
 .hero-delay-2 { animation-delay: 350ms; }
 .hero-delay-3 { animation-delay: 550ms; }
 
+@keyframes critter-life {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(12px);
+  }
+  12% {
+    opacity: 1;
+    transform: scale(1.15) translateY(-4px);
+  }
+  20% {
+    transform: scale(1) translateY(0);
+  }
+  30% {
+    transform: scale(1) translateY(0) rotate(-3deg);
+  }
+  40% {
+    transform: scale(1) translateY(-2px) rotate(3deg);
+  }
+  50% {
+    transform: scale(1) translateY(0) rotate(-2deg);
+  }
+  60% {
+    transform: scale(1) translateY(-1px) rotate(1deg);
+  }
+  70% {
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+  85% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.6) translateY(8px);
+  }
+}
+
+.critter-spawn {
+  animation: critter-life ease-in-out both;
+  will-change: transform, opacity;
+}
+
+@keyframes gentle-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+.animate-float {
+  animation: gentle-float 4s ease-in-out infinite;
+}
+
+.animate-sway {
+  animation: sway 5s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .hero-animate {
+  .hero-animate,
+  .animate-float,
+  .animate-sway {
     animation: none;
     opacity: 1;
     transform: none;
+  }
+  .critter-spawn {
+    animation: none;
+    display: none;
+  }
+  .marquee-track,
+  .marquee-track-reverse {
+    animation: none;
   }
 }
