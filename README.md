@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# We The Farm
 
-## Getting Started
+Website for **We The Farm**, a community rooftop farm on Level 5 of Beauty World Centre, Singapore. The hawker stalls downstairs save their food scraps, we compost them, and we grow food with it.
 
-First, run the development server:
+**Live site:** Deployed on [Vercel](https://vercel.com)
+
+## What the site does
+
+- **Public pages** — Landing page, events listing with RSVP booking, a shop for workshops and compost products, shopping cart, and an editorial "About" page telling our story.
+- **Admin dashboard** — Auth-protected section for managing events, products, and viewing bookings. Accessible at `/admin`.
+
+## Tech stack
+
+| Layer | Tech |
+|-------|------|
+| Framework | Next.js 16 (App Router) |
+| Language | TypeScript (strict) |
+| Styling | Tailwind CSS v4 |
+| Database & Auth | Supabase |
+| Hosting | Vercel |
+| Icons | Lucide React |
+
+## Getting started
+
+### Prerequisites
+
+- Node.js 18+
+- A [Supabase](https://supabase.com) project with three tables: `events`, `bookings`, `products`
+
+### Setup
 
 ```bash
+# Install dependencies
+npm install
+
+# Configure environment
+cp .env.local.example .env.local
+# Fill in your Supabase keys (see .env.local.example for details)
+
+# Start the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The app builds and renders without Supabase credentials — data-dependent pages will just show empty states.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Environment variables
 
-## Learn More
+| Variable | Description |
+|----------|-------------|
+| `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anonymous/public key |
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service role key (server-side only) |
 
-To learn more about Next.js, take a look at the following resources:
+Get these from your Supabase dashboard under **Settings → API**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── page.tsx              # Landing page
+│   ├── events/               # Events listing + detail/booking
+│   ├── shop/                 # Product listing + detail
+│   ├── cart/                 # Shopping cart
+│   ├── about/                # Our Story editorial page
+│   └── admin/                # Auth-gated admin dashboard
+│       ├── events/           # CRUD for events
+│       ├── products/         # CRUD for products
+│       ├── bookings/         # View RSVPs
+│       └── login/            # Admin login
+├── components/               # Shared UI (Header, Footer, cards, forms)
+├── contexts/
+│   └── CartContext.tsx        # Cart state with localStorage persistence
+└── lib/
+    ├── supabase.ts           # Client-side Supabase instance + type definitions
+    ├── supabase-server.ts    # Server-side Supabase client (service role)
+    └── past-events.ts        # Hardcoded past event data
+```
 
-## Deploy on Vercel
+## Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run dev       # Start development server
+npm run build     # Production build
+npm run start     # Serve production build
+npm run lint      # Run ESLint
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Design
+
+The visual identity draws from farm-poster aesthetics — bold serif typography (Young Serif), an earthy palette (olive greens, terracotta, warm creams), and hand-drawn decorative SVG shapes scattered throughout. Full design context lives in `.impeccable.md`.
+
+## About We The Farm
+
+We're a volunteer-run rooftop farm started in 2022 by Jin Xiang, Nicholas, and Darren. We collect food scraps from the hawker stalls at Beauty World Centre and compost them using four different systems: vermiculture, black soldier fly larvae, isopods, and hot composting. The compost feeds the soil, the soil grows the food, and whatever we don't eat goes back into the pile.
+
+Sessions run on Saturdays. Everyone's welcome — no experience needed.
+
+- **Location:** Level 5, Beauty World Centre, 144 Upper Bukit Timah Rd, Singapore 588177
+- **Instagram:** [@wethefarm](https://www.instagram.com/wethefarm)
